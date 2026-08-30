@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+Create Account | RemitAxisGlobal
+</title>
+
+<link
+rel="stylesheet"
+href="css/style.css"
+>
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+<div class="logo">
+RemitAxis<span>Global</span>
+</div>
+
+</header>
+
+
+
+<main>
+
+<section class="auth-section">
+
+<div class="auth-card">
+
+<p class="eyebrow dark">
+REMITAXISGLOBAL
+</p>
+
+<h1>
+Create your account
+</h1>
+
+<p>
+Create a development account
+for the RemitAxisGlobal prototype.
+</p>
+
+
+<form
+class="auth-form"
+onsubmit="event.preventDefault(); registerUser();"
+>
+
+
+<label>
+Full Name
+</label>
+
+<input
+type="text"
+id="registerName"
+placeholder="Your name"
+required
+>
+
+
+<label>
+Email
+</label>
+
+<input
+type="email"
+id="registerEmail"
+placeholder="you@example.com"
+required
+>
+
+
+<label>
+Password
+</label>
+
+<input
+type="password"
+id="registerPassword"
+placeholder="At least 8 characters"
+required
+>
+
+
+<button
+type="submit"
+class="auth-button"
+>
+Create Account
+</button>
+
+
+<p
+id="registerMessage"
+class="form-message"
+>
+</p>
+
+
+</form>
+
+
+<p class="auth-link">
+Already have an account?
+<a href="login.html">
+Log in
+</a>
+</p>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+
+<script src="js/auth.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+Profile | RemitAxisGlobal
+</title>
+
+<link
+rel="stylesheet"
+href="css/style.css"
+>
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+<div class="logo">
+RemitAxis<span>Global</span>
+</div>
+
+
+<button
+class="menu-btn"
+onclick="toggleMenu()"
+>
+☰
+</button>
+
+
+<nav id="navMenu">
+
+<a href="index.html">
+Home
+</a>
+
+<a href="send-money.html">
+Send Money
+</a>
+
+<a href="rates.html">
+Rates
+</a>
+
+<a href="dashboard.html">
+Dashboard
+</a>
+
+<a href="notifications.html">
+Notifications
+</a>
+
+<a href="profile.html">
+Profile
+</a>
+
+</nav>
+
+</header>
+
+
+
+<main>
+
+<section class="market-section">
+
+
+<div class="section-heading">
+
+<p class="eyebrow dark">
+ACCOUNT
+</p>
+
+<h1>
+Your Profile
+</h1>
+
+<p>
+Manage your RemitAxisGlobal account information.
+</p>
+
+</div>
+
+
+
+<div class="dashboard-panel">
+
+
+<h2>
+Personal Information
+</h2>
+
+
+<div class="auth-form">
+
+
+<label>
+Full Name
+</label>
+
+<input
+type="text"
+id="profileName"
+placeholder="Your name"
+>
+
+
+<label>
+Email Address
+</label>
+
+<input
+type="email"
+id="profileEmail"
+placeholder="Your email"
+>
+
+
+<button
+type="button"
+onclick="saveProfile()"
+class="auth-button"
+>
+Save Changes
+</button>
+
+
+<p
+id="profileMessage"
+class="form-message"
+>
+</p>
+
+</div>
+
+
+</div>
+
+
+
+<div class="dashboard-panel">
+
+
+<h2>
+Account Security
+</h2>
+
+<p>
+Keep your account information secure and
+never share your password with anyone.
+</p>
+
+</div>
+
+
+</section>
+
+</main>
+
+
+
+<footer>
+
+<div class="copyright">
+
+© 2026 RemitAxisGlobal.
+Prototype/MVP.
+
+</div>
+
+</footer>
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

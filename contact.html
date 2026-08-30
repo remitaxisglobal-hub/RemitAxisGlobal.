@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Contact | RemitAxisGlobal</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <a
+        href="index.html"
+        class="logo"
+    >
+        Remit<span>AxisGlobal</span>
+    </a>
+
+
+    <button
+        class="menu-btn"
+        id="menuBtn"
+    >
+        ☰
+    </button>
+
+
+    <nav id="mainNav">
+
+        <a href="index.html">Home</a>
+
+        <a href="rates.html">Rates</a>
+
+        <a href="compare.html">Compare</a>
+
+        <a href="send-money.html">Send Money</a>
+
+        <a href="about.html">About</a>
+
+        <a href="faq.html">FAQ</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="login.html">Login</a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="market-section">
+
+    <div class="section-heading">
+
+        <p class="eyebrow dark">
+            CONTACT REMITAXISGLOBAL
+        </p>
+
+        <h1>
+            Let's connect.
+        </h1>
+
+        <p>
+            Have a question about the platform?
+            Send us a message through the form
+            below.
+        </p>
+
+    </div>
+
+
+    <div class="dashboard-panel">
+
+        <form
+            id="contactForm"
+            class="auth-form"
+        >
+
+            <label for="contactName">
+                Your Name
+            </label>
+
+            <input
+                id="contactName"
+                type="text"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label for="contactEmail">
+                Email Address
+            </label>
+
+            <input
+                id="contactEmail"
+                type="email"
+                placeholder="Enter your email"
+                required
+            >
+
+
+            <label for="contactMessage">
+                Message
+            </label>
+
+            <textarea
+                id="contactMessage"
+                placeholder="Write your message..."
+                required
+                style="
+                    width:100%;
+                    min-height:150px;
+                    padding:15px;
+                    border:1px solid #cbd5e1;
+                    border-radius:12px;
+                    font-family:Arial, sans-serif;
+                    font-size:15px;
+                    resize:vertical;
+                    outline:none;
+                "
+            ></textarea>
+
+
+            <button
+                type="submit"
+                class="auth-button"
+            >
+                Send Message
+            </button>
+
+
+            <p
+                id="contactMessageStatus"
+                class="form-message"
+            ></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<section class="market-section">
+
+    <div class="market-grid">
+
+        <div class="market-card">
+
+            <span>✉️</span>
+
+            <h3>
+                Email
+            </h3>
+
+            <p>
+                Email support will be connected
+                when the production system is ready.
+            </p>
+
+        </div>
+
+
+        <div class="market-card">
+
+            <span>💬</span>
+
+            <h3>
+                Support
+            </h3>
+
+            <p>
+                We're building a dedicated support
+                experience for future users.
+            </p>
+
+        </div>
+
+
+        <div class="market-card">
+
+            <span>🌍</span>
+
+            <h3>
+                Global
+            </h3>
+
+            <p>
+                Designed with international
+                payment corridors in mind.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="copyright">
+
+        © 2026 RemitAxisGlobal.
+        Prototype platform.
+
+    </div>
+
+</footer>
+
+
+<script>
+
+    const menuBtn =
+        document.getElementById("menuBtn");
+
+    const mainNav =
+        document.getElementById("mainNav");
+
+
+    if (menuBtn && mainNav) {
+
+        menuBtn.addEventListener(
+            "click",
+            function() {
+
+                mainNav.classList.toggle(
+                    "active"
+                );
+
+            }
+        );
+
+    }
+
+
+    const contactForm =
+        document.getElementById(
+            "contactForm"
+        );
+
+
+    if (contactForm) {
+
+        contactForm.addEventListener(
+            "submit",
+            function(event) {
+
+                event.preventDefault();
+
+
+                const status =
+                    document.getElementById(
+                        "contactMessageStatus"
+                    );
+
+
+                status.textContent =
+                    "✓ Message saved for this prototype.";
+
+
+                status.style.color =
+                    "#047857";
+
+
+                contactForm.reset();
+
+            }
+        );
+
+    }
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+Dashboard | RemitAxisGlobal
+</title>
+
+<link
+rel="stylesheet"
+href="css/style.css"
+>
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+<div class="logo">
+RemitAxis<span>Global</span>
+</div>
+
+
+<button
+class="menu-btn"
+onclick="toggleMenu()"
+>
+☰
+</button>
+
+
+<nav id="navMenu">
+
+<a href="index.html">
+Home
+</a>
+
+<a href="send-money.html">
+Send Money
+</a>
+
+<a href="rates.html">
+Rates
+</a>
+
+<a href="compare.html">
+Compare
+</a>
+
+<a href="dashboard.html">
+Dashboard
+</a>
+
+</nav>
+
+</header>
+
+
+
+<main>
+
+<section class="market-section">
+
+
+<div class="section-heading">
+
+<p class="eyebrow dark">
+PRIVATE DASHBOARD
+</p>
+
+<h1>
+Welcome,
+<span data-user-name>
+User
+</span>
+</h1>
+
+<p>
+Manage your RemitAxisGlobal
+transfer activity.
+</p>
+
+</div>
+
+
+
+<div
+class="api-status demo"
+id="apiStatus"
+>
+● Authenticated
+</div>
+
+
+
+<!-- DASHBOARD CARDS -->
+
+<div class="market-grid">
+
+
+<div class="market-card">
+
+<span>
+💸
+</span>
+
+<h3>
+Transfers
+</h3>
+
+<h2 id="transferCount">
+0
+</h2>
+
+<p>
+Total transfers
+</p>
+
+</div>
+
+
+<div class="market-card">
+
+<span>
+💰
+</span>
+
+<h3>
+Volume
+</h3>
+
+<h2 id="totalVolume">
+$0.00
+</h2>
+
+<p>
+Transfer volume
+</p>
+
+</div>
+
+
+<div class="market-card">
+
+<span>
+✓
+</span>
+
+<h3>
+Completed
+</h3>
+
+<h2 id="completedCount">
+0
+</h2>
+
+<p>
+Completed transfers
+</p>
+
+</div>
+
+
+<div class="market-card">
+
+<span>
+📁
+</span>
+
+<h3>
+Records
+</h3>
+
+<h2 id="savedCount">
+0
+</h2>
+
+<p>
+Your records
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- ACCOUNT -->
+
+<div class="dashboard-panel">
+
+<h2>
+Account
+</h2>
+
+<p>
+Signed in as:
+</p>
+
+<strong data-user-email>
+Loading...
+</strong>
+
+<br><br>
+
+<button
+type="button"
+onclick="logoutUser()"
+class="auth-button"
+>
+Logout
+</button>
+
+</div>
+
+
+
+<!-- CREATE TRANSFER -->
+
+<div class="dashboard-panel dark-panel">
+
+<h2>
+Send Money
+</h2>
+
+<p>
+Create a new transfer plan.
+</p>
+
+<a
+href="send-money.html"
+class="btn primary"
+>
+Create Transfer
+</a>
+
+</div>
+
+
+
+<!-- TRANSACTIONS -->
+
+<div class="dashboard-panel">
+
+
+<div class="panel-header">
+
+<div>
+
+<h2>
+My Transactions
+</h2>
+
+<p>
+Transfers belonging to your account.
+</p>
+
+</div>
+
+
+<div class="filters">
+
+<input
+type="text"
+id="transactionSearch"
+placeholder="Search..."
+oninput="searchTransactions()"
+>
+
+
+<select
+id="transactionFilter"
+onchange="filterTransactions()"
+>
+
+<option value="all">
+All
+</option>
+
+<option value="Planned">
+Planned
+</option>
+
+<option value="Processing">
+Processing
+</option>
+
+<option value="Completed">
+Completed
+</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+
+<div
+id="transactionList"
+class="transaction-list"
+>
+
+<div class="empty-state">
+
+Loading transactions...
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<!-- SECURITY -->
+
+<div class="dashboard-panel">
+
+<h2>
+Security
+</h2>
+
+<p>
+Your dashboard is protected by an
+authentication token in this development
+version.
+</p>
+
+</div>
+
+
+</section>
+
+</main>
+
+
+
+<footer>
+
+<div class="copyright">
+
+© 2026 RemitAxisGlobal.
+Development prototype.
+
+</div>
+
+</footer>
+
+
+
+<script src="js/auth.js"></script>
+<script>
+    requireLogin();
+</script>
+
+<script src="js/script.js"></script>
+
+<script src="js/notifications.js"></script>
+</body>
+
+</html>
